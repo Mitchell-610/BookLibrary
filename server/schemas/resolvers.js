@@ -1,4 +1,4 @@
-const { User} = require('../models');
+const { User, Book} = require('../models');
 const mongoose = require('mongoose');
 
 const resolvers = {
@@ -63,6 +63,7 @@ const resolvers = {
                 { new: true }
               );
             },
-            
           },
     };
+
+    module.exports = resolvers;
