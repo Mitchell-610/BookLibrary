@@ -5,7 +5,16 @@ const typeDefs = gql`
     _id: ID!
     username: String!
     email: String!
-    savedBooks: [Book] # Define your Book type accordingly
+    savedBooks: [Book]
+  }
+
+  type Book {
+  authors: [String]
+  description: String
+  bookId: String
+  image: String
+  link: String
+  title: String
   }
 
   type Auth {
@@ -25,4 +34,4 @@ const typeDefs = gql`
   }
 `;
 
-module.exports = { typeDefs };
+module.exports =  typeDefs;
